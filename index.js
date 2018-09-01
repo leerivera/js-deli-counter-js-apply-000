@@ -1,8 +1,17 @@
-function takeANumber(line, name){
-  line.push(name);
-  let i = line.indexOf(name) + 1;
-  let greet = 'Welcome, ' + name + '. You are number ' +  i  +' in line.';
+let ticket = 1;
+
+function takeANumber(line){
+
   
+  let greet = 'Welcome, You are number ' +  ticket;
+  
+  
+  
+  line.push(ticket ++);
+  
+  
+  return greet
+}
   
   
  
@@ -13,10 +22,10 @@ function takeANumber(line, name){
 
   
   
-  return greet
   
   
-}
+  
+
 
 function nowServing(line, name){
   
